@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -77,8 +77,7 @@ public:
     virtual bool LogError(const NFGUID ident, const std::ostringstream& stream, const char* func = "", int line = 0) = 0;
     virtual bool LogFatal(const NFGUID ident, const std::ostringstream& stream, const char* func = "", int line = 0) = 0;
 
-
-
+	virtual void StackTrace() = 0;
 };
 
 #endif

@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -23,8 +23,9 @@
    limitations under the License.
 */
 
-#include "NFCWorldLogicModule.h"
-#include "NFCWorldPVPModule.h"
+#include "NFWorldLogicModule.h"
+#include "NFWorldPVPModule.h"
+#include "NFWorldPropsModule.h"
 #include "NFWorldLogicPlugin.h"
 
 NF_EXPORT void DllStartPlugin(NFIPluginManager* pm)
@@ -51,12 +52,14 @@ const std::string NFWorldLogicPlugin::GetPluginName()
 
 void NFWorldLogicPlugin::Install()
 {
-	REGISTER_MODULE(pPluginManager, NFIWorldLogicModule, NFCWorldLogicModule)
-	REGISTER_MODULE(pPluginManager, NFIWorldPVPModule, NFCWorldPVPModule)
+	REGISTER_MODULE(pPluginManager, NFIWorldLogicModule, NFWorldLogicModule)
+	REGISTER_MODULE(pPluginManager, NFIWorldPVPModule, NFWorldPVPModule)
+	REGISTER_MODULE(pPluginManager, NFIWorldPropsModule, NFWorldPropsModule)
 }
 
 void NFWorldLogicPlugin::Uninstall()
 {
-	UNREGISTER_MODULE(pPluginManager, NFIWorldPVPModule, NFCWorldPVPModule)
-	UNREGISTER_MODULE(pPluginManager, NFIWorldLogicModule, NFCWorldLogicModule)
+	UNREGISTER_MODULE(pPluginManager, NFIWorldPropsModule, NFWorldPropsModule)
+	UNREGISTER_MODULE(pPluginManager, NFIWorldPVPModule, NFWorldPVPModule)
+	UNREGISTER_MODULE(pPluginManager, NFIWorldLogicModule, NFWorldLogicModule)
 }

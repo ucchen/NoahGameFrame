@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -24,7 +24,7 @@
 */
 
 
-#include "NFCScaleModule.h"
+#include "NFScaleModule.h"
 #include "NFScalePlugin.h"
 
 #ifdef NF_DYNAMIC_PLUGIN
@@ -51,16 +51,16 @@ const int NFScalePlugin::GetPluginVersion()
 
 const std::string NFScalePlugin::GetPluginName()
 {
-	return GET_CLASS_NAME(NFCScalePlugin);
+	return GET_CLASS_NAME(NFScalePlugin);
 }
 
 void NFScalePlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFIScaleModule, NFCScaleModule)
+    REGISTER_MODULE(pPluginManager, NFIScaleModule, NFScaleModule)
 
 }
 
 void NFScalePlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFIScaleModule, NFCScaleModule)
+    UNREGISTER_MODULE(pPluginManager, NFIScaleModule, NFScaleModule)
 }

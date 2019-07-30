@@ -1,5 +1,5 @@
 /*
-    Copyright 2009 - 2018 NoahGameFrame/NoahFrame
+    Copyright 2009 - 2019 NoahGameFrame/NoahFrame
     
    This source file is part of NoahGameFrame/NoahFrame.
    NoahGameFrame/NoahFrame is open-source software and you can redistribute it and/or modify
@@ -19,7 +19,7 @@
 */
 
 
-#include "NFCAOIModule.h"
+#include "NFAOIModule.h"
 #include "NFAOIPlugin.h"
 
 //
@@ -53,11 +53,11 @@ const std::string NFAOIPlugin::GetPluginName()
 
 void NFAOIPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFIAOIModule, NFCAOIModule)
+    REGISTER_MODULE(pPluginManager, NFIAOIModule, NFAOIModule)
 
 }
 
 void NFAOIPlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFIAOIModule, NFCAOIModule)
+    UNREGISTER_MODULE(pPluginManager, NFIAOIModule, NFAOIModule)
 }

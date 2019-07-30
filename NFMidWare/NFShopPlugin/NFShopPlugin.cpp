@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -24,7 +24,7 @@
 */
 
 
-#include "NFCShopModule.h"
+#include "NFShopModule.h"
 #include "NFShopPlugin.h"
 
 //
@@ -53,16 +53,16 @@ const int NFShopPlugin::GetPluginVersion()
 
 const std::string NFShopPlugin::GetPluginName()
 {
-	return GET_CLASS_NAME(NFCShopPlugin);
+	return GET_CLASS_NAME(NFShopPlugin);
 }
 
 void NFShopPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFIShopModule, NFCShopModule)
+    REGISTER_MODULE(pPluginManager, NFIShopModule, NFShopModule)
 
 }
 
 void NFShopPlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFIShopModule, NFCShopModule)
+    UNREGISTER_MODULE(pPluginManager, NFIShopModule, NFShopModule)
 }

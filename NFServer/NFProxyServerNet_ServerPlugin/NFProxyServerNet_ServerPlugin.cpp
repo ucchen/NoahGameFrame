@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -23,7 +23,7 @@
    limitations under the License.
 */
 
-#include "NFCProxyServerNet_ServerModule.h"
+#include "NFProxyServerNet_ServerModule.h"
 #include "NFProxyServerNet_ServerPlugin.h"
 
 //
@@ -57,11 +57,11 @@ const std::string NFProxyServerNet_ServerPlugin::GetPluginName()
 
 void NFProxyServerNet_ServerPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFIProxyServerNet_ServerModule, NFCProxyServerNet_ServerModule)
+    REGISTER_MODULE(pPluginManager, NFIProxyServerNet_ServerModule, NFProxyServerNet_ServerModule)
 
 }
 
 void NFProxyServerNet_ServerPlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFIProxyServerNet_ServerModule, NFCProxyServerNet_ServerModule)
+    UNREGISTER_MODULE(pPluginManager, NFIProxyServerNet_ServerModule, NFProxyServerNet_ServerModule)
 }

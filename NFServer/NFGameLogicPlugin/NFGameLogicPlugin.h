@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -24,8 +24,8 @@
 */
 
 
-#ifndef NFC_GAMELOGICLUGIN_H
-#define NFC_GAMELOGICLUGIN_H
+#ifndef NF_GAMELOGICLUGIN_H
+#define NF_GAMELOGICLUGIN_H
 
 #include "NFComm/NFPluginModule/NFIPlugin.h"
 #include "NFComm/NFPluginModule/NFIPluginManager.h"

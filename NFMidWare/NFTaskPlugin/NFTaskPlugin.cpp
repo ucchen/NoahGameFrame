@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -25,7 +25,7 @@
 
 
 
-#include "NFCTaskModule.h"
+#include "NFTaskModule.h"
 #include "NFTaskPlugin.h"
 
 //
@@ -59,11 +59,11 @@ const std::string NFTaskPlugin::GetPluginName()
 
 void NFTaskPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFITaskModule, NFCTaskModule)
+    REGISTER_MODULE(pPluginManager, NFITaskModule, NFTaskModule)
 
 }
 
 void NFTaskPlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFITaskModule, NFCTaskModule)
+    UNREGISTER_MODULE(pPluginManager, NFITaskModule, NFTaskModule)
 }

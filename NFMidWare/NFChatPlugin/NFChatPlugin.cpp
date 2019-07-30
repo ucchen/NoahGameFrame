@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -23,7 +23,7 @@
    limitations under the License.
 */
 
-#include "NFCChatModule.h"
+#include "NFChatModule.h"
 #include "NFChatPlugin.h"
 
 //
@@ -57,11 +57,11 @@ const std::string NFChatPlugin::GetPluginName()
 
 void NFChatPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFIChatModule, NFCChatModule)
+    REGISTER_MODULE(pPluginManager, NFIChatModule, NFChatModule)
 
 }
 
 void NFChatPlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFIChatModule, NFCChatModule)
+    UNREGISTER_MODULE(pPluginManager, NFIChatModule, NFChatModule)
 }

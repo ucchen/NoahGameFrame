@@ -1,5 +1,5 @@
 /*
-    Copyright 2009 - 2018 LvSheng.Huang
+    Copyright 2009 - 2019 LvSheng.Huang
 
    This source file is part of NoahGameFrame/NoahFrame.
    NoahGameFrame/NoahFrame is open-source software and you can redistribute it and/or modify
@@ -321,6 +321,7 @@ typedef int64_t NFSOCK;
 #define EPOCHFILETIME 11644473600000000Ui64
 #endif
 
+#define ELPP_DISABLE_DEFAULT_CRASH_HANDLING
 
 #if NF_PLATFORM == NF_PLATFORM_WIN
 #define NFSPRINTF sprintf_s
@@ -397,6 +398,11 @@ inline bool IsZeroFloat(const float fValue, float epsilon = 1e-6)
 inline bool IsZeroDouble(const double dValue, double epsilon = 1e-15)
 {
     return std::abs(dValue) <= epsilon;
+}
+
+inline int64_t NFGetTimeMSEx()
+{
+	return std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
 //millisecond

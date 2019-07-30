@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -71,7 +71,7 @@ public:
         DST_SAVE,
     };
 
-    class NFCBuffConfig : public NFMap<std::string, int>
+    class NFBuffConfig : public NFMap<std::string, int>
     {
     public:
         std::string strConfig;
@@ -98,7 +98,7 @@ public:
         BuffDownSaveType DownSaveTypeValue;
     };
 
-    virtual NFCBuffConfig* GetBuffConfig(const std::string& strConfig) = 0;
+    virtual NFBuffConfig* GetBuffConfig(const std::string& strConfig) = 0;
 
 };
 

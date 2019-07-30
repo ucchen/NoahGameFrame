@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -24,7 +24,7 @@
 */
 
 
-#include "NFCFriendModule.h"
+#include "NFFriendModule.h"
 #include "NFFriendPlugin.h"
 
 //
@@ -53,16 +53,16 @@ const int NFFriendPlugin::GetPluginVersion()
 
 const std::string NFFriendPlugin::GetPluginName()
 {
-	return GET_CLASS_NAME(NFCFriendPlugin);
+	return GET_CLASS_NAME(NFFriendPlugin);
 }
 
 void NFFriendPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFIFriendModule, NFCFriendModule)
+    REGISTER_MODULE(pPluginManager, NFIFriendModule, NFFriendModule)
 
 }
 
 void NFFriendPlugin::Uninstall()
 {
-    UNREGISTER_MODULE(pPluginManager, NFIFriendModule, NFCFriendModule)
+    UNREGISTER_MODULE(pPluginManager, NFIFriendModule, NFFriendModule)
 }

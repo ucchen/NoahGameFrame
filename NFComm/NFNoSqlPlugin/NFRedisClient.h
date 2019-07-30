@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -799,8 +799,8 @@ protected:
 
 private:
 
-	bool bAuthed;
-	bool bBusy;
+	bool mbAuthed;
+	bool mbBusy;
 	NFRedisClientSocket* m_pRedisClientSocket;
 };
 

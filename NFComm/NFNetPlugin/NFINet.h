@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: lvsheng.huang
    
@@ -168,10 +168,10 @@ struct NFIMsgHead
 
 };
 
-class NFCMsgHead : public NFIMsgHead
+class NFMsgHead : public NFIMsgHead
 {
 public:
-    NFCMsgHead()
+    NFMsgHead()
     {
         munSize = 0;
         munMsgID = 0;

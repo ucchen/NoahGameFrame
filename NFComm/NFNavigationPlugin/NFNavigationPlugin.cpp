@@ -3,7 +3,7 @@
                 NoahFrame
             https://github.com/ketoo/NoahGameFrame
 
-   Copyright 2009 - 2018 NoahFrame(NoahGameFrame)
+   Copyright 2009 - 2019 NoahFrame(NoahGameFrame)
 
    File creator: Bluesky
    
@@ -23,7 +23,7 @@
    limitations under the License.
 */
 
-#include "NFCNavigationModule.h"
+#include "NFNavigationModule.h"
 #include "NFNavigationPlugin.h"
 
 //
@@ -57,10 +57,10 @@ const std::string NFNavigationPlugin::GetPluginName()
 
 void NFNavigationPlugin::Install()
 {
-    REGISTER_MODULE(pPluginManager, NFINavigationModule, NFCNavigationModule)
+    REGISTER_MODULE(pPluginManager, NFINavigationModule, NFNavigationModule)
 }
 
 void NFNavigationPlugin::Uninstall()
 {
-	UNREGISTER_MODULE(pPluginManager, NFINavigationModule, NFCNavigationModule)
+	UNREGISTER_MODULE(pPluginManager, NFINavigationModule, NFNavigationModule)
 }
